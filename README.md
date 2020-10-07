@@ -3,7 +3,7 @@
 This project describes a quick-start for deploying a Squid proxy in a container.  You may need to update squid.conf to match the requirements of the test environment.
 
 ~~~
-sudo mkdir /opt/squid/cache
+sudo mkdir -p /opt/squid/cache
 sudo cp squid.conf /opt/squid
 
 sudo podman run --privileged --name squid -d --restart=always \
